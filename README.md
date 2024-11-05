@@ -1,7 +1,7 @@
 First of all download the data file by
 ```
 curl -JLO "https://figshare.com/ndownloader/files/49358275?private_link=727f8d920a1b8415f09a"
-curl _JLO "https://figshare.com/ndownloader/files/49358278?private_link=727f8d920a1b8415f09a"
+curl -JLO "https://figshare.com/ndownloader/files/49358278?private_link=727f8d920a1b8415f09a"
 ```
 In the Snakemake file `Run.smk`, I have created six rules, including the `rule all`, which coordinates the production of the desired outputs in a sequential manner. The `rule all` encompasses all outputs from the various rules, except for the `Subsampling` rule, which we need to force run.
 
